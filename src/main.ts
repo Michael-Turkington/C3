@@ -1,4 +1,4 @@
- <canvas id="my-canvas" width="680" height="480" style="background-color: #FF0200;"></canvas>
+    <canvas id="my-canvas" width="680" height="480" style="background-color: #FF0200;"></canvas>
     <script>
         const canvas = document.getElementById('my-canvas');
         const context = canvas.getContext('2d');
