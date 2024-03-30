@@ -1,4 +1,4 @@
-import { bootstrapCameraKit, createMediaStreamSource, Transform2D } from "@snap/camera-kit";
+import { bootstrapCameraKit, createMediaStreamSource, Transform2D } from "/@snap/camera-kit";
 
 (async function () {
         console.log("Hello");
