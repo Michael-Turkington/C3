@@ -1,8 +1,8 @@
+import { bootstrapCameraKit, createMediaStreamSource, Transform2D } from "@snap/camera-kit";
+
 window.addEventListener("load", (event) => {
         console.log("Hello");
-        import { bootstrapCameraKit, createMediaStreamSource, Transform2D } from "@snap/camera-kit";
-
-(async function main() {
+        
     const apiToken = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNzExNjAxNjAyLCJzdWIiOiIyY2ZkMzFiZC1lMWFmLTQ1N2QtYWJmYy1hOThhNzkzMzRlMWZ-U1RBR0lOR34wOTM2YTE4NC00NjJiLTQ5YjgtOGZjYi05YzAwMDNmMmUwNzUifQ.xEpM3aiqXNU6uIM6w70BfsWag42WdXt3wnGv-hckOUk";
     const cameraKit = await bootstrapCameraKit({ apiToken });
 
@@ -27,5 +27,4 @@ window.addEventListener("load", (event) => {
 
     await session.play();
     console.log("Lens rendering has started!");
-})();
 });
