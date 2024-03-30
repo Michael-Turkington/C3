@@ -1,4 +1,5 @@
 window.addEventListener("load", (event) => {
+        console.log("Hello");
         const canvas = document.getElementById('my-canvas');
         const context = canvas.getContext('2d');
 
