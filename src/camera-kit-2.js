@@ -10,7 +10,7 @@ import { bootstrapCameraKit, createMediaStreamSource, Transform2D } from "@snap/
     const canvas = document.getElementById("my-canvas");
     const liveRenderTarget = document.getElementById(
          'my-canvas'
-          ) as HTMLCanvasElement;
+          );
     const session = await cameraKit.createSession({ liveRenderTarget});
     session.events.addEventListener('error', (event) => {
       if (event.detail.error.name === 'LensExecutionError') {
