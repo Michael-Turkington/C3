@@ -1,6 +1,6 @@
 import { bootstrapCameraKit, createMediaStreamSource, Transform2D } from "@snap/camera-kit";
 
-window.addEventListener("load", (event) => {
+(async function () {
         console.log("Hello");
         console.log("Hello2");
         
@@ -28,4 +28,4 @@ window.addEventListener("load", (event) => {
 
     await session.play();
     console.log("Lens rendering has started!");
-});
+})();
